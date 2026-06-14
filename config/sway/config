@@ -17,3 +17,4 @@ include $HOME/.config/sway/UserConfigs/Startup_Apps.conf
 include $HOME/.config/sway/UserConfigs/01-UserDefaults.conf
 include $HOME/.config/sway/outputs
 include $HOME/.config/sway/workspaces
+include $HOME/.config/sway/wallust/wallust-sway.conf
