@@ -1,0 +1,19 @@
+# Sway main config — KooL-style Sway-Dots (translated from JaKooLit Hyprland-Dots)
+set $mainMod Mod4
+set $term kitty
+set $files thunar
+set $scriptsDir $HOME/.config/sway/scripts
+set $UserScripts $HOME/.config/sway/UserScripts
+
+include $HOME/.config/sway/configs/ENVariables.conf
+include $HOME/.config/sway/configs/SystemSettings.conf
+include $HOME/.config/sway/configs/Keybinds.conf
+include $HOME/.config/sway/configs/WindowRules.conf
+include $HOME/.config/sway/configs/Startup_Apps.conf
+include $HOME/.config/sway/UserConfigs/UserSettings.conf
+include $HOME/.config/sway/UserConfigs/UserKeybinds.conf
+include $HOME/.config/sway/UserConfigs/WindowRules.conf
+include $HOME/.config/sway/UserConfigs/Startup_Apps.conf
+include $HOME/.config/sway/UserConfigs/01-UserDefaults.conf
+include $HOME/.config/sway/outputs
+include $HOME/.config/sway/workspaces
