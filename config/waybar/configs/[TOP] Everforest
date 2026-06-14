@@ -91,7 +91,6 @@
 	"format-time": "{H}h {M}min",
 	"tooltip": true,
 	"tooltip-format": "{timeTo} {power}w",
-	"on-click-middle": "$HOME/.config/sway/scripts/ChangeBlur.sh",
 	"on-click-right": "$HOME/.config/sway/scripts/Wlogout.sh",
 },
 

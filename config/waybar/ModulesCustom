@@ -156,9 +156,8 @@
 "custom/power": {
 	"format": " ⏻ ",
 	"on-click": "$HOME/.config/sway/scripts/Wlogout.sh",
-	"on-click-right": "$HOME/.config/sway/scripts/ChangeBlur.sh",
 	"tooltip": true,
-	"tooltip-format": "Left Click: Logout Menu\nRight Click: Change Blur",
+	"tooltip-format": "Left Click: Logout Menu",
 },
 
 "custom/reboot": {
