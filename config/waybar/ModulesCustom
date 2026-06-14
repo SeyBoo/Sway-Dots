@@ -77,16 +77,16 @@
 	"tooltip-format": "Check KooL Dots update\nIf available",
 },
 
-// Hypridle inhibitor
+// Idle inhibitor
 "custom/hypridle": {
 	"format": "󱫗 ",
 	"return-type": "json",
 	"escape": true,
 	"exec-on-event": true,
 	"interval": 60,
-	"exec": "$HOME/.config/sway/scripts/Hypridle.sh status",
-	"on-click": "$HOME/.config/sway/scripts/Hypridle.sh toggle",
-	"on-click-right": "hyprlock"
+	"exec": "$HOME/.config/sway/scripts/IdleInhibit.sh status",
+	"on-click": "$HOME/.config/sway/scripts/IdleInhibit.sh toggle",
+	"on-click-right": "$HOME/.config/sway/scripts/LockScreen.sh"
 },
 
 "custom/keyboard": {
@@ -105,14 +105,14 @@
 	"tooltip-format": "Left Click: Switch Dark-Light Themes\nMiddle Click: Wallpaper Menu\nRight Click: Waybar Styles Menu",
 },
 
-// Night light (Hyprsunset)
+// Night light (wlsunset)
 "custom/nightlight": {
 	"return-type": "json",
-	"exec": "$HOME/.config/sway/scripts/Hyprsunset.sh status",
+	"exec": "$HOME/.config/sway/scripts/Nightlight.sh status",
 	"interval": 3,
 	"format": "{text}",
 	"min-length": 2,
-	"on-click": "$HOME/.config/sway/scripts/Hyprsunset.sh toggle",
+	"on-click": "$HOME/.config/sway/scripts/Nightlight.sh toggle",
 	"tooltip": true,
 	"tooltip-format": "Night light toggle",
 	"escape": false
