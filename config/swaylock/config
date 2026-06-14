@@ -1,0 +1,16 @@
+# swaylock (plain) — replaces hyprlock
+color=1e1e2e
+indicator
+indicator-radius=120
+indicator-thickness=12
+ring-color=1e1e2e
+ring-ver-color=89b4fa
+ring-wrong-color=f38ba8
+key-hl-color=89b4fa
+line-color=00000000
+inside-color=11111b88
+inside-ver-color=11111b88
+inside-wrong-color=f38ba8
+separator-color=00000000
+text-color=cdd6f4
+text-ver-color=cdd6f4
