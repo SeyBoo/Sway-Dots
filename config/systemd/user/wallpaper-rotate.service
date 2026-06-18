@@ -1,0 +1,6 @@
+[Unit]
+Description=Rotate sway wallpaper
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/sway/wallpaper-rotate.sh
