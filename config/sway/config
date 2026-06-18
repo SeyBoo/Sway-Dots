@@ -34,8 +34,6 @@ exec systemctl --user start gamemoded
 for_window [app_id=".*"] inhibit_idle fullscreen
 for_window [title=".*"] inhibit_idle fullscreen
 
-# Gaming mode toggle (mod+G): zero gaps + hide waybar
-bindsym $mod+G exec ~/.config/sway/gaming-toggle.sh
 
 # Output config
 output * bg ~/.config/hypr/wallpaper_effects/.wallpaper_current fill
