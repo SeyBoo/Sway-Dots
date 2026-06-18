@@ -471,6 +471,15 @@ if [ -f "config/gamemode.ini" ]; then
 fi
 
 # ---------------------------------------------------------------------------
+# Flatpak overrides
+# ---------------------------------------------------------------------------
+if [ -d "config/flatpak-overrides" ]; then
+  mkdir -p "$HOME/.local/share/flatpak/overrides"
+  cp config/flatpak-overrides/* "$HOME/.local/share/flatpak/overrides/" 2>&1 | tee -a "$LOG"
+  echo "${OK} - Flatpak overrides copied." 2>&1 | tee -a "$LOG"
+fi
+
+# ---------------------------------------------------------------------------
 # Set scripts executable
 # ---------------------------------------------------------------------------
 chmod +x "$HOME/.config/sway/scripts/"* 2>&1 | tee -a "$LOG"

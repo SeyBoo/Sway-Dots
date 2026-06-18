@@ -1,0 +1,7 @@
+[Session Bus Policy]
+com.feralinteractive.GameMode=talk
+
+[Environment]
+DXVK_PRESENT_MODE=2
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libgamemodeauto.so.0
+VKD3D_PRESENT_MODE=2

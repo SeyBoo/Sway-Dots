@@ -39,7 +39,7 @@ bindsym $mod+G exec ~/.config/sway/gaming-toggle.sh
 
 # Output config
 output * bg ~/.config/hypr/wallpaper_effects/.wallpaper_current fill
-output DP-1 resolution 3840x2160 scale 1.25
+output DP-1 resolution 3840x2160 scale 1.25 adaptive_sync on
 output HDMI-A-1 scale 1.5
 output eDP-1 scale 1.5
 
