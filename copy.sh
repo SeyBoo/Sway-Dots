@@ -376,7 +376,7 @@ printf "\n%.0s" {1..1}
 # ---------------------------------------------------------------------------
 printf "${INFO} - Copying dotfiles ${SKY_BLUE}second${RESET} part\n"
 
-PHASE2_DIRS="btop cava ghostty Kvantum qt5ct qt6ct swappy sway swaylock wezterm wlogout wallust"
+PHASE2_DIRS="btop cava environment.d ghostty Kvantum qt5ct qt6ct swappy sway swaylock wezterm wlogout wallust"
 
 for app in $PHASE2_DIRS; do
   src="config/$app"
@@ -460,6 +460,14 @@ if cp -r wallpapers "$PICTURES_DIR/"; then
   echo "${OK} Some ${MAGENTA}wallpapers${RESET} copied successfully!" | tee -a "$LOG"
 else
   echo "${ERROR} Failed to copy some ${YELLOW}wallpapers${RESET}" | tee -a "$LOG"
+fi
+
+# ---------------------------------------------------------------------------
+# Standalone config files
+# ---------------------------------------------------------------------------
+if [ -f "config/gamemode.ini" ]; then
+  cp "config/gamemode.ini" "$HOME/.config/gamemode.ini" 2>&1 | tee -a "$LOG"
+  echo "${OK} - gamemode.ini copied." 2>&1 | tee -a "$LOG"
 fi
 
 # ---------------------------------------------------------------------------
